@@ -1,0 +1,21 @@
+{% load render_bundle from webpack_loader %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Django React</title>
+    <!-- Webpack rendered CSS -->
+    {% render_bundle 'app1' 'css' %}
+    {% render_bundle 'app2' 'css' %}
+</head>
+<body>
+<div id="app1"></div>
+<hr>
+<br>
+<div id="app2"></div>
+<!-- Webpack rendered JS -->
+{% render_bundle 'app1' 'js' %}
+
+{% render_bundle 'app2' 'js' %}
+</body>
+</html>

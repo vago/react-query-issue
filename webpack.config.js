@@ -2,6 +2,7 @@ var path = require("path");
 var webpack = require("webpack");
 var BundleTracker = require("webpack-bundle-tracker");
 module.exports = {
+  mode: "development",
   entry: {
     app1: path.join(__dirname, "assets/src/js/index"),
     app2: path.join(__dirname, "assets/src/js/index2"),
